@@ -1,0 +1,5 @@
+  - BRCA1 referans FASTA (NCBI, RefSeq: NM_007294 / NP_009225)
+  - BRCA2 referans FASTA (NCBI, RefSeq: NM_000059 / NP_000050)
+  - BRCA1/2 ClinVar varyant seti (ClinVar VCF export)
+  - UniProt domain koordinatları (P38398, P51587)
+
