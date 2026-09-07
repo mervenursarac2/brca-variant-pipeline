@@ -54,11 +54,10 @@ def parse_blast_results(xml_path):
 
 
 if __name__ == "__main__":
-    # BRCA1 için BLAST
-    brca1_protein = load_protein_sequence(DATA_RAW / "brca1_protein.fasta")
-    brca1_xml = RESULTS / "brca1_blast_results.xml"
-    run_blast(brca1_protein, brca1_xml)
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.width', None)
 
+    brca1_xml = RESULTS / "brca1_blast_results.xml"
     brca1_df = parse_blast_results(brca1_xml)
     brca1_df.to_csv(RESULTS / "brca1_blast_summary.csv", index=False)
     print(brca1_df.head())
