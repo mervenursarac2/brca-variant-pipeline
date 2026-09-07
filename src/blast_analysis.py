@@ -57,7 +57,13 @@ if __name__ == "__main__":
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
 
-    brca1_xml = RESULTS / "brca1_blast_results.xml"
-    brca1_df = parse_blast_results(brca1_xml)
-    brca1_df.to_csv(RESULTS / "brca1_blast_summary.csv", index=False)
-    print(brca1_df.head())
+    genes = {
+        "brca1": RESULTS / "brca1_blast_results.xml",
+        "brca2": RESULTS / "brca2_blast_results.xml",
+    }
+
+    for gene_name, xml_path in genes.items():
+        print(f"\n--- {gene_name.upper()} BLAST Sonuçları ---")
+        df = parse_blast_results(xml_path)
+        df.to_csv(RESULTS / f"{gene_name}_blast_summary.csv", index=False)
+        print(df.head())
