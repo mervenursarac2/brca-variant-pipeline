@@ -1,0 +1,7 @@
+hit_title,e_value,identity_pct,align_length,query_coverage
+sp|P51587.4| RecName: Full=Breast cancer type 2 susceptibility protein; AltName: Full=Fanconi anemia group D1 protein [Homo sapiens],0.0,100.0,3418,100.0
+sp|Q864S8.2| RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Felis catus],0.0,67.8,3456,101.11
+sp|P97929.2| RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Mus musculus],0.0,57.66,3413,99.85
+sp|O35923.1| RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Rattus norvegicus],0.0,56.62,3423,100.15
+sp|Q7Y1C4.1| RecName: Full=Protein BREAST CANCER SUSCEPTIBILITY 2 homolog B; Short=AtBRCA2B [Arabidopsis thaliana],1.11095e-55,29.02,603,17.64
+sp|Q7Y1C5.1| RecName: Full=Protein BREAST CANCER SUSCEPTIBILITY 2 homolog A; Short=AtBRCA2A [Arabidopsis thaliana],2.6293e-54,29.29,577,16.88
