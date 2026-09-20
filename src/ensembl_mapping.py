@@ -47,7 +47,7 @@ def get_canonical_transcripts(df):
     return canonical_df
 
 
-if __name__ == "__main__":
+def main():
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
 
@@ -68,3 +68,6 @@ if __name__ == "__main__":
     canonical_df.to_csv(DATA_PROCESSED / "canonical_transcripts.csv", index=False)
     print("\n--- Canonical Transcript'ler ---")
     print(canonical_df)
+
+if __name__ == "__main__":
+    main()

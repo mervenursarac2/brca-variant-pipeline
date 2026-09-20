@@ -24,5 +24,8 @@ def filter_brca_variants(input_path, output_path, chunksize=100_000):
     return result
 
 
-if __name__ == "__main__":
+def main():
     filter_brca_variants(INPUT_PATH, OUTPUT_PATH)
+
+if __name__ == "__main__":
+    main()

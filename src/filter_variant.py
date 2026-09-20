@@ -40,7 +40,7 @@ def filter_low_quality(df):
     return df
 
 
-if __name__ == "__main__":
+def main():
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
 
@@ -63,3 +63,6 @@ if __name__ == "__main__":
 
     crosstab_df = pd.crosstab(df["clinical_category"], df["is_high_confidence"])
     crosstab_df.to_csv(DATA_PROCESSED / "clinical_category_confidence_crosstab.csv")
+
+if __name__ == "__main__":
+    main()

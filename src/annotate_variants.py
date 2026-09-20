@@ -51,7 +51,7 @@ def annotate_variants(df):
     return df
 
 
-if __name__ == "__main__":
+def main():
     df = pd.read_csv(DATA_PROCESSED / "brca_variants_categorized.csv")
     df = annotate_variants(df)
 
@@ -67,3 +67,6 @@ if __name__ == "__main__":
     output_path = DATA_PROCESSED / "brca_variants_annotated.csv"
     df.to_csv(output_path, index=False)
     print(f"\nKaydedildi: {output_path}")
+
+if __name__ == "__main__":
+    main()

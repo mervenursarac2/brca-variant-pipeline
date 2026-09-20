@@ -42,5 +42,10 @@ def download_with_resume(url, output_path, max_retries=10):
     return False
 
 
-if __name__ == "__main__":
+def main():
     download_with_resume(URL, OUTPUT_PATH)
+
+    
+
+if __name__ == "__main__":
+    main()

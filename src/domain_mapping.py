@@ -30,7 +30,7 @@ def fetch_domains(uniprot_id):
     return pd.DataFrame(domains)
 
 
-if __name__ == "__main__":
+def main():
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
 
@@ -45,3 +45,6 @@ if __name__ == "__main__":
     domains_df = pd.concat(all_domains, ignore_index=True)
     domains_df.to_csv(DATA_PROCESSED / "protein_domains.csv", index=False)
     print(f"\nKaydedildi: {DATA_PROCESSED / 'protein_domains.csv'}")
+
+if __name__ == "__main__":
+    main()

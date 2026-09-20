@@ -108,7 +108,7 @@ def plot_effect_type_stacked(effect_summary_df, output_name):
     print(f"Kaydedildi: {output_name}")
 
 
-if __name__ == "__main__":
+def main():
     variants_df = pd.read_csv(DATA_PROCESSED / "brca_variants_with_domains.csv")
     domains_df = pd.read_csv(DATA_PROCESSED / "protein_domains.csv")
     density_df = pd.read_csv(DATA_PROCESSED / "stats_domain_density.csv")
@@ -121,3 +121,6 @@ if __name__ == "__main__":
     plot_effect_type_stacked(effect_summary_df, "effect_type_stacked.png")
 
     print("\nTüm görseller results/ klasörüne kaydedildi.")
+
+if __name__ == "__main__":
+    main()

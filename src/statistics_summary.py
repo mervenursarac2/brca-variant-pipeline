@@ -54,7 +54,7 @@ def effect_type_summary(df):
     return summary_pct.round(1)
 
 
-if __name__ == "__main__":
+def main():
     df = pd.read_csv(DATA_PROCESSED / "brca_variants_with_domains.csv")
     domains_df = pd.read_csv(DATA_PROCESSED / "protein_domains.csv")
 
@@ -74,3 +74,6 @@ if __name__ == "__main__":
     effect_summary.to_csv(DATA_PROCESSED / "stats_effect_type_summary.csv")
 
     print("\nTüm istatistik dosyaları data/processed/ içine kaydedildi.")
+
+if __name__ == "__main__":
+    main()

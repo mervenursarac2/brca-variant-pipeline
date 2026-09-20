@@ -26,7 +26,7 @@ def find_domain(gene, position, domains_df):
     return "; ".join(matches["domain_name"].tolist())
 
 
-if __name__ == "__main__":
+def main():
     variants_df = pd.read_csv(DATA_PROCESSED / "brca_variants_annotated.csv")
     domains_df = pd.read_csv(DATA_PROCESSED / "protein_domains.csv")
 
@@ -52,3 +52,6 @@ if __name__ == "__main__":
     print(other_brct["ClinicalSignificance"].value_counts())
     variants_df.to_csv(output_path, index=False)
     print(f"\nKaydedildi: {output_path}")
+
+if __name__ == "__main__":
+    main()

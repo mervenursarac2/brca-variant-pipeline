@@ -62,7 +62,7 @@ def fetch_cds_and_translate(accession):
     raise ValueError(f"{accession} için CDS bulunamadı")
 
 
-if __name__ == "__main__":
+def main():
     brca1_mrna = fetch_and_save("NM_007294", "nucleotide", str(DATA_RAW / "brca1_mrna.fasta"))
     brca2_mrna = fetch_and_save("NM_000059", "nucleotide", str(DATA_RAW / "brca2_mrna.fasta"))
     brca1_protein = fetch_and_save("NP_009225", "protein", str(DATA_RAW / "brca1_protein.fasta"))
@@ -76,3 +76,7 @@ if __name__ == "__main__":
 
     print("\n--- BRCA2 Doğrulama (CDS ile) ---")
     verify_translation_v2("NM_000059", brca2_protein)
+
+
+if __name__ == "__main__":
+    main()

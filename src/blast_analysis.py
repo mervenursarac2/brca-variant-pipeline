@@ -53,7 +53,7 @@ def parse_blast_results(xml_path):
     return pd.DataFrame(records)
 
 
-if __name__ == "__main__":
+def main():
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
 
@@ -67,3 +67,6 @@ if __name__ == "__main__":
         df = parse_blast_results(xml_path)
         df.to_csv(RESULTS / f"{gene_name}_blast_summary.csv", index=False)
         print(df.head())
+
+if __name__ == "__main__":
+    main()
